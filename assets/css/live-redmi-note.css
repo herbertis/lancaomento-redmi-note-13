@@ -1,0 +1,703 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+@font-face {
+font-family: 'Camphor Pro';
+src: url(https://i05.appmifile.com/events/fonts/0111/CamphorPro-Regular.otf) format("opentype")
+}
+
+#Btn-phone{display: none;}
+.mobile-note{display: none;}
+
+.share {
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+z-index: 9;
+}
+.share-prd {
+bottom: 140px;
+position: fixed;
+right: 100px;
+}
+
+.share_icon_ot {
+background-repeat: no-repeat;
+background-size: cover;
+height: 50px;
+margin-bottom: 15px;
+width: 50px;
+}
+
+.share .share-top {
+background-repeat: no-repeat;
+background-size: contain;
+cursor: pointer;
+height: 50px;
+width: 50px;
+}
+
+.share .common-icon-share-facebook-grey {background-image: url(https://i02.appmifile.com/activity-mi-web/fly-birds/xiaomi-launch-september-2023/pc/facebook.png);}
+.share .common-icon-share-instagram-grey {background-image: url(https://i02.appmifile.com/activity-mi-web/fly-birds/xiaomi-launch-september-2023/pc/instagram.png);}
+.share .common-icon-share-twitter-grey {background-image: url(https://i02.appmifile.com/activity-mi-web/fly-birds/xiaomi-launch-september-2023/pc/twitter.png);}
+.share-grey {background-image: url(https://i02.appmifile.com/activity-mi-web/fly-birds/xiaomi-launch-september-2023/pc/up.png);}
+
+
+.share .common-icon-share-facebook, .common-icon-share-tw, .share .common-icon-share-twitter, .share .common-icon-share-instagram-grey {
+background-repeat: no-repeat;
+background-size: contain;
+cursor: pointer;
+height: 50px;
+width: 50px;
+}
+
+a{
+text-decoration: none;
+color: #000;
+}
+
+img,
+video {height: auto; width: 100%;}
+
+.img-note{
+width: 100%;
+}
+
+body, html{font-family: 'Camphor Pro';}
+
+button{
+border: none;
+background: none;
+}
+
+
+.logo{
+width: 35rem;
+margin-bottom: 1.5rem;
+}
+
+.top-header {
+align-items: center;
+color: #191919;
+display: flex;
+font-size: .94vw;
+font-weight: 400;
+justify-content: space-between;
+line-height: 1.13vw;
+padding: 1.17vw 1.88vw 0 1.17vw;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 9;
+}
+
+.top-header .header-logo {
+background-image: url(https://i05.appmifile.com/events/logos/orange-logo.png);
+background-size: 100%;
+display: inline-block;
+height: 2.34vw;
+width: 2.34vw;
+}
+
+.grid-galeria {
+display: grid;
+gap: 2rem;
+width: 100%;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.galeria{
+padding: 7rem;
+background: #f7fcff;
+width: 100%;
+}
+
+.phone-flex{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+
+.header-1 {
+background-image: url(../media/capa.webp);
+background-position: 50%;
+background-size: cover;
+box-sizing: border-box;
+flex-direction: column;
+height: 34vw;
+padding: 0 8.98vw;
+position: relative;
+width: 100%;
+}
+
+.header-1, .header-1-calendar {
+align-items: center;
+display: flex;
+justify-content: center;
+}
+
+.header-1-text {
+align-items: center;
+color: #191919;
+display: flex;
+flex-direction: column;
+top: 2rem;
+margin-top: -12rem;
+width: 100%;
+}
+
+.section02{
+margin: 5rem;
+text-align: center;
+}
+
+.section-note{
+overflow: hidden;
+position: relative;
+z-index: 1;
+padding-bottom: 0.3rem;
+}
+
+
+/********************************************************************/
+
+.title-promo{
+font-size: 1.88vw;
+font-weight: 700;
+line-height: 1.1;
+text-align: center;
+}
+
+.title-preto{
+font-size: 1.88vw;
+font-weight: 700;
+line-height: 1.1;
+text-align: center;
+}
+
+.title-preto-phone {
+font-size: 1.88vw;
+font-weight: 700;
+line-height: 1.1;
+text-align: center;
+width: 34rem;
+}
+
+.p-preto {
+font-size: .94vw;
+margin-top: 0.94vw;
+text-align: center;
+}
+
+.p-preto-video {
+font-size: 1.3vw;
+margin-top: 0.94vw;
+text-align: left;
+}
+
+.p-preto-aviso {
+font-size: 1rem;
+margin-top: 0.94vw;
+text-align: center;
+margin: 1rem;
+}
+
+.p-preto-mais {
+font-size: 3rem;
+text-align: center;
+}
+
+.p-preto-phone{
+font-size: .94vw;
+margin: 0.94vw;
+text-align: center;
+width: 23.44vw;
+line-height: 1.5;
+}
+
+.text-overlay {
+position: absolute;
+top: 83%;
+left: 64%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #000;
+}
+
+/*****************************************************************/
+
+
+#Btn-phone {
+border: none;
+outline: none;
+background-color: #191919;
+color: white;
+cursor: pointer;
+padding: 25px;
+border-radius: 10px;
+bottom: 50px;
+right: 60px;
+margin: 0 auto;
+width: 76rem;
+height: auto;
+font-size: 5rem;
+}
+
+#Btn-phone:hover{
+background-color: #ff6900;
+}
+
+#countdown {
+font-size: 4rem;
+color: #000;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 2rem;
+}
+
+.time-container {
+margin: 10px;
+text-align: center;
+}
+
+.time {
+font-size: 1.5em;
+font-weight: bold;
+color: #000;
+}
+
+.label {
+font-size: 0.8em;
+color: #e02213;
+}
+
+.email {
+align-items: center;
+background: #fff;
+display: flex;
+flex-direction: column;
+height: auto;
+margin-top: 1.6vw;
+margin-bottom: 1.6vw;
+
+}
+
+.email__title {
+color: #191919;
+font-size: 1.64vw;
+font-weight: 700;
+line-height: 1.2;
+margin: 1.13vw auto 1.41vw;
+max-width: 38vw;
+text-align: center;
+}
+
+.email__content {
+height: 2.5vw;
+position: relative;
+width: 32.03vw
+}
+
+.email__content-text {
+background: #fff;
+border: .04vw solid #e0e0e0;
+border-radius: .63vw;
+box-sizing: border-box;
+color: #191919;
+font-size: .94vw;
+height: 100%;
+line-height: 2.5vw;
+outline: 0;
+padding: .08vw .94vw;
+width: 100%
+}
+
+.email .agree-box {
+cursor: pointer;
+margin-top: .78vw;
+text-align: center;
+width: 32.03vw
+}
+
+.email .agree-box .radio {
+background-size: cover;
+display: inline-block;
+height: .94vw;
+margin-right: .31vw;
+vertical-align: middle;
+width: .94vw
+}
+
+.email .agree-box .agree-text {
+color: #898989;
+font-size: .63vw;
+font-weight: 400;
+line-height: .74vw
+}
+
+.email .agree-box .agree-link {color: #ff6900}
+
+.email .common-toast {
+background: #000;
+border-radius: .63vw;
+color: #fff;
+font-size: .94vw;
+font-weight: 400;
+height: 7.85vw;
+left: 50%;
+line-height: 1.13vw;
+opacity: .7;
+padding: .7vw 1.88vw;
+position: absolute;
+text-align: center;
+top: 50%;
+transform: translate(-50%,-50%);
+width: 29.69vw
+}
+
+.video_icon {
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+left: 5rem;
+position: absolute;
+top: calc(50% - 0.96094rem);
+z-index: 1;
+}
+
+
+
+
+
+@media  screen and (max-width:920px) {
+
+.desktop-note{display: none;}
+.mobile-note{display: block;}
+
+img{max-width: 100%;}
+video{max-width: 100%;}
+
+[hidden] {display: none;}
+
+a {
+text-decoration: none;
+color: #000;
+font-size: 1rem;
+}
+
+.top-header {
+align-items: center;
+color: #191919;
+display: flex;
+font-weight: 400;
+justify-content: space-between;
+line-height: 1.13vw;
+padding: 3vw 2.88vw 0 2.17vw;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 9;
+}
+
+.top-header .header-logo {
+background-image: url(https://i05.appmifile.com/events/logos/orange-logo.png);
+background-size: 100%;
+display: inline-block;
+height: 10vw;
+width: 10vw;
+}
+
+.grid-galeria{
+display: flex;
+background-position: center;
+align-content: center;
+justify-content: center;
+align-items: center;
+justify-items: stretch;
+flex-direction: column;
+flex-wrap: nowrap;
+}
+
+.grid-text{
+padding: 0.5rem;
+}
+
+.grid-mob-note{
+
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+}
+
+.phone-flex{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+
+.galeria {
+padding: 1.5rem;
+background: #f7f7f7;
+}
+
+.header-1 {
+background-image: url(../media/capa-mobile.webp);
+background-size: cover;
+box-sizing: border-box;
+flex-direction: column;
+height: 170.5vw;
+padding: 0 8.98vw;
+position: relative;
+width: 100%;
+}
+
+.header-1, .header-1-calendar {
+align-items: center;
+display: flex;
+justify-content: center;
+}
+
+.header-1-text {
+align-items: center;
+color: #191919;
+display: flex;
+flex-direction: column;
+margin-top: -20rem;
+}
+
+.header-1-text-1 {
+width:27rem;
+}
+
+/********************************/
+
+.title-preto{
+font-size: 6vw;
+font-weight: 700;
+line-height: 1.1;
+text-align: center;
+width: 70vw;
+margin-bottom: 1rem;
+}
+
+.title-preto-phone {
+font-size: 1.9rem;
+font-weight: 700;
+line-height: 1.1;
+text-align: center;
+width: 20rem;
+}
+
+.title-promo {
+font-size: 1.88rem;
+font-weight: 700;
+line-height: 1.1;
+text-align: center;
+}
+
+.p-preto-aviso {
+font-size: 0.6rem;
+margin-top: 0.94vw;
+text-align: center;
+margin: 1rem;
+}
+
+.p-preto{
+font-size: 1.4rem;
+text-align: center;
+width: 68vw;
+}
+
+.p-preto-phone{
+font-size: 1rem;
+margin-top: 0.94vw;
+text-align: center;
+width: 68vw;
+}
+
+.email {
+align-items: center;
+background: #fff;
+display: flex;
+flex-direction: column;
+height: auto;
+margin-top: 1.6vw;
+margin-bottom: 1.6vw;
+
+}
+.email__title {
+color: #191919;
+font-size: 1.64rem;
+font-weight: 700;
+line-height: 1.2;
+margin: 1.13vw auto 1.41vw;
+max-width: 100%;
+text-align: center;
+}
+
+.email__content {
+height: 2.5rem;
+position: relative;
+width: 100%
+}
+
+.email__content-text {
+background: #ffffff;
+border: 0.04vw solid #e0e0e0;
+border-radius: 0.63vw;
+box-sizing: border-box;
+color: #191919;
+font-size: 1rem;
+height: 100%;
+line-height: 2.5vw;
+outline: 0;
+padding: 0.08rem 0.94rem;
+width: 100%;
+}
+
+.email .agree-box {
+cursor: pointer;
+margin-top: 0.78vw;
+text-align: center;
+width: 100%;
+margin-bottom: 2rem;
+}
+
+.email .agree-box .radio {
+background-size: cover;
+display: inline-block;
+height: 1rem;
+margin-right: 0.31vw;
+vertical-align: middle;
+width: 1rem;
+}
+
+.email .agree-box .agree-text {
+color: #898989;
+font-size: 1rem;
+font-weight: 400;
+line-height: .74vw
+}
+
+.email .agree-box .agree-link {color: #ff6900}
+
+.email .common-toast {
+background: #000;
+border-radius: .63vw;
+color: #fff;
+font-size: 1rem;
+font-weight: 400;
+height: 7.85vw;
+left: 50%;
+line-height: 1.13vw;
+opacity: .7;
+padding: .7vw 1.88vw;
+position: absolute;
+text-align: center;
+top: 50%;
+transform: translate(-50%,-50%);
+width: 29.69vw
+}
+
+
+
+
+
+
+.section01{
+margin: 1rem;
+text-align: center;
+}
+
+.section02 {
+margin: 1rem;
+text-align: center;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+
+.share-prd {
+bottom: 140px;
+position: fixed;
+right: 27px;
+}
+
+.card {
+width: 21rem;
+border-radius: 6px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin: 10px;
+text-align: center;
+}
+
+.video-container {
+position: relative;
+overflow: hidden;
+}
+
+.video-container video {
+width: 100%;
+height: auto;
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+}
+
+.card-text {
+padding: 15px;
+background-color: #fff;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+
+#countdown {
+font-size: 1.8rem;
+color: #000;
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+padding: 0rem;
+
+flex-direction: row;
+}
+
+
+#Btn-phone{
+border: none;
+outline: none;
+background-color: #191919;
+color: white;
+cursor: pointer;
+padding: 25px;
+border-radius: 10px;
+bottom: 0px;
+right: 0px;
+width: 90%;
+font-size: 2.5rem;
+}
+
+#Btn-phone:hover{
+background-color: #ff6900;
+}
+
+}
